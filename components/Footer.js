@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { footerVariants } from "../components/motion";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -19,6 +20,7 @@ function Footer() {
             <h4 className="font-bold md:text-[44px] font-fonttext text-[24px]">
               CREATING CONTENT PEOPLE WANT
             </h4>
+            <Link href="https://www.youtube.com/@kwadwosheldonstudios/videos"></Link>
             <button
               type="button"
               className="flex items-center py-4 px-6 bg-[#ff003a] rounded-[32px] gap-[12px]"

@@ -28,9 +28,9 @@ function Services() {
                 We have services that cater for our clients need.
               </p>
               <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white">
-                We create an environment for your brand to be noticed. Creation
-                We speak the digital language about the product or business you
-                want to put across on Social Media.
+                We create an environment for your brand to be noticed. We speak
+                the digital language about the product or business you want to
+                put across on Social Media.
               </p>
             </div>
           </motion.div>
