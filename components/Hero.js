@@ -17,7 +17,7 @@ function Hero() {
         <div className="flex sm:justify-center lg:justify-start  items-center p-10">
           <motion.h1
             variants={textVariant(6.1)}
-            className="text-[#fff] font-extrabold 2xl:text-[250px]  xl:text-[150px] sm:text-[120px] text-[90px] pb-5 font-fonttext"
+            className="text-[#fff] font-extrabold 2xl:text-[250px]  xl:text-[150px] sm:text-[120px] text-[80px] pb-5 font-fonttext"
           >
             K<span className="">W</span>A
             <span className="text-[#ff0049]">DWO</span>
@@ -35,7 +35,7 @@ function Hero() {
             className="bg-white  flex sm:justify-center pl-5 lg:pl-0"
           >
             {" "}
-            <motion.h1 className="2xl:text-[150px]  text-[#200025] sm:text-[120px] text-[90px] px-4 text-center font-fonttext font-extrabold">
+            <motion.h1 className="2xl:text-[150px]  text-[#200025] sm:text-[120px] text-[80px] px-4 text-center font-fonttext font-extrabold">
               SHELDON
             </motion.h1>
           </motion.div>
