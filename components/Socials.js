@@ -56,7 +56,7 @@ function Socials() {
               {" "}
               <h1 className="text-center text-[45px] text-white">
                 {counterOn && (
-                  <CountUp start={0} end={1} duration={2} delay={0} />
+                  <CountUp start={0} end={1} duration={2} delay={1} />
                 )}
                 M+
               </h1>
@@ -78,7 +78,7 @@ function Socials() {
               {" "}
               <h1 className="text-center text-[45px] text-white">
                 {counterOn && (
-                  <CountUp start={0} end={1} duration={2} delay={0} />
+                  <CountUp start={0} end={1} duration={2} delay={1} />
                 )}
                 M+
               </h1>
@@ -100,7 +100,7 @@ function Socials() {
               {" "}
               <h1 className="text-center text-[45px] text-white">
                 {counterOn && (
-                  <CountUp start={0} end={100} duration={2} delay={0} />
+                  <CountUp start={0} end={100} duration={2} delay={1.5} />
                 )}
                 K+
               </h1>
@@ -123,7 +123,7 @@ function Socials() {
               {" "}
               <h1 className="text-center text-[45px] text-white">
                 {counterOn && (
-                  <CountUp start={0} end={470} duration={2} delay={0} />
+                  <CountUp start={0} end={470} duration={2} delay={2} />
                 )}
                 K+
               </h1>
