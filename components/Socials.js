@@ -28,7 +28,7 @@ function Socials() {
             </div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
+              // onExit={() => setCounterOn(false)}
             >
               {" "}
               <h1 className="text-center text-[45px] text-white">
@@ -51,7 +51,7 @@ function Socials() {
             </div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
+              // onExit={() => setCounterOn(false)}
             >
               {" "}
               <h1 className="text-center text-[45px] text-white">
@@ -73,7 +73,7 @@ function Socials() {
             </div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
+              // onExit={() => setCounterOn(false)}
             >
               {" "}
               <h1 className="text-center text-[45px] text-white">
@@ -95,7 +95,7 @@ function Socials() {
             </div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
+              // onExit={() => setCounterOn(false)}
             >
               {" "}
               <h1 className="text-center text-[45px] text-white">
@@ -118,7 +118,7 @@ function Socials() {
             </div>
             <ScrollTrigger
               onEnter={() => setCounterOn(true)}
-              onExit={() => setCounterOn(false)}
+              // onExit={() => setCounterOn(false)}
             >
               {" "}
               <h1 className="text-center text-[45px] text-white">
