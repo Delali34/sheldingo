@@ -43,13 +43,13 @@ function Hero() {
             variants={textVariant(6.5)}
             class="scrolling-text bg-[#ffa300] font-fonttext font-extrabold"
           >
-            <span className="  2xl:text-[150px] sm:text-[120px] text-[90px] text-[#ffF] text-item">
+            <span className="  2xl:text-[150px] sm:text-[120px] text-[80px] text-[#ffF] text-item">
               STUDIOS - HOUSE OF CONTENT
             </span>
-            <span className="  2xl:text-[150px] sm:text-[120px] text-[90px] text-[#fff] text-item">
+            <span className="  2xl:text-[150px] sm:text-[120px] text-[80px] text-[#fff] text-item">
               STUDIOS - HOUSE OF CONTENT
             </span>
-            <span className=" 2xl:text-[150px] sm:text-[120px] text-[90px] text-[#fff] text-item">
+            <span className=" 2xl:text-[150px] sm:text-[120px] text-[80px] text-[#fff] text-item">
               STUDIOS - HOUSE OF CONTENT
             </span>
           </motion.div>
