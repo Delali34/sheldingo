@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 function page() {
   return (
     <>
-      {/* <LoadingScreen /> */}
+      <LoadingScreen />
       <Mainpage />
       <Explore />
       <Brands />
