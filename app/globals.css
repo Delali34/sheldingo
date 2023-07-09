@@ -1,27 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss/tailwind.css";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.main-button {
+  z-index: 1;
+  margin-left: 0;
+  padding: 0.75em 1.5em;
+  justify-content: center;
+  align-items: center;
+  border: 0.125em solid #000;
+  border-radius: 0.25em;
+  background-color: #ff0049;
+  transform: perspective(10px);
+  transition: box-shadow 250ms, transform 0.3s;
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.main-button:hover {
+  border-style: solid;
+  box-shadow: 3px 3px 0 0 #000;
+  transform: perspective(10px) skew(-3deg, -3deg);
+}
+.scrolling-text {
+  display: flex;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-item {
+  display: inline-block;
+  padding-left: 100%; /* Push the spans to start outside the container */
+}
+
+.text-item:nth-child(1) {
+  animation: scroll-left 10s linear infinite;
+}
+
+.text-item:nth-child(2) {
+  animation: scroll-left 10s linear infinite; /* Delayed by 5 seconds */
+}
+
+.text-item:nth-child(3) {
+  animation: scroll-left 10s linear infinite; /* Delayed by 10 seconds */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
+.menubar {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.menu-active {
+  transform: translateX(0);
+}
+.log {
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  background-color: #200025;
+}
+.logos {
+  height: 350px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.logos-slide {
+  display: flex;
+  width: calc(350px * 18);
+  animation: slide 20s linear infinite;
+}
+
+.slide {
+  height: 300px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 9));
+  }
+}
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+
+  background: #7aebfb;
+  filter: blur(190px);
+}
+.feedback-gradient {
+  position: absolute;
+  width: 200px;
+  height: 316px;
+  left: 0px;
+  top: 0px;
+
+  background: #8d39a3;
+  filter: blur(175px);
+}
+.image-rotator {
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.svg-shape {
+  width: 43px;
+  height: 37px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37" fill="none"%3E%3Cpath d="M0 31V0H35L43 4V37H6.5L0 31Z" fill="white"/%3E%3C/svg%3E');
+}
+
+.wrap {
+  display: grid;
+  max-width: 100%;
+
+  place-items: center;
+}
+.wrapper {
+}
+.wrapper .icons {
+  margin: 0 30px;
+  cursor: pointer;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+/* .wrapper .icons span {
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.wrapper .icons .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: white;
+
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.wrapper .icons:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+} */
+/* Add the SVG shape as a background */
+.wrapper .icons span {
+  position: relative;
+  z-index: 2;
+  height: 140px;
+  width: 140px;
+  display: block;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37" fill="none"%3E%3Cpath d="M0 31V0H35L43 4V37H6.5L0 31Z" fill="white"/%3E%3C/svg%3E');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust the tooltip position */
+.wrapper .icons .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: white;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Adjust the tooltip animation */
+.wrapper .icons:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .icons .tooltip {
+  position: absolute;
+  top: 0px;
+  background: #fff;
+  font-size: 29px;
+  padding: 10px 18px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icons:hover span,
+.wrapper .icons:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook .tooltip::before {
+  background: #3b5999;
+}
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram .tooltip::before {
+  background: #e1306c;
+}
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter .tooltip::before {
+  background: #1da1f2;
+}
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok .tooltip::before {
+  background: #69c9d0;
+}
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube .tooltip::before {
+  background: #ff0000;
+}
+.wrapper .icons span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37" fill="white"%3E%3Cpath d="M0 31V0H35L43 4V37H6.5L0 31Z" fill="black"/%3E%3C/svg%3E');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+  z-index: -10;
+}
+.wrapper .icons.facebook:hover span::before {
+  background-color: #3b5998; /* Example color for Facebook */
+}
+.wrapper .icons.instagram:hover span::before {
+  background-color: #e1306c; /* Example color for Instagram */
+}
+
+.wrapper .icons.twitter:hover span::before {
+  background-color: #1da1f2; /* Example color for Twitter */
+}
+
+.wrapper .icons.tiktok:hover span::before {
+  background-color: #69c9d0; /* Example color for TikTok */
+}
+
+.wrapper .icons.youtube:hover span::before {
+  background-color: #ff0000; /* Example color for YouTube */
+}
+.menu .icon span {
+  position: relative;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  display: block;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37" fill="none"%3E%3Cpath d="M0 31V0H35L43 4V37H6.5L0 31Z" fill="white"/%3E%3C/svg%3E');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.menu .icon span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="43" height="37" viewBox="0 0 43 37" fill="white"%3E%3Cpath d="M0 31V0H35L43 4V37H6.5L0 31Z" fill="black"/%3E%3C/svg%3E');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background-color: white;
+  transition: background-color 0.2s ease-in-out;
+  z-index: -10;
+}
+.menu .icon span::before {
+  background-color: #ff0049; /* Example color for Facebook */
+}
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0049; /* Set the color of the scrollbar thumb */
 }
