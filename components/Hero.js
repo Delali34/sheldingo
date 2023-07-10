@@ -35,7 +35,7 @@ function Hero() {
             className="bg-white  flex sm:justify-center pl-5 lg:pl-0"
           >
             {" "}
-            <motion.h1 className="2xl:text-[150px]  text-[#200025] sm:text-[120px] text-[80px] px-4 text-center font-fonttext font-extrabold">
+            <motion.h1 className="2xl:text-[150px]  text-[#200025] sm:text-[120px] text-[90px] px-4 text-center font-fonttext font-extrabold">
               SHELDON
             </motion.h1>
           </motion.div>
@@ -43,56 +43,17 @@ function Hero() {
             variants={textVariant(6.5)}
             class="scrolling-text bg-[#ffa300] font-fonttext font-extrabold"
           >
-            <span className="  2xl:text-[150px] sm:text-[120px] text-[80px] text-[#ffF] text-item">
+            <span className="  2xl:text-[150px] sm:text-[120px] text-[90px] text-[#ffF] text-item">
               STUDIOS - HOUSE OF CONTENT
             </span>
-            <span className="  2xl:text-[150px] sm:text-[120px] text-[80px] text-[#fff] text-item">
+            <span className="  2xl:text-[150px] sm:text-[120px] text-[90px] text-[#fff] text-item">
               STUDIOS - HOUSE OF CONTENT
             </span>
-            <span className=" 2xl:text-[150px] sm:text-[120px] text-[80px] text-[#fff] text-item">
+            <span className=" 2xl:text-[150px] sm:text-[120px] text-[90px] text-[#fff] text-item">
               STUDIOS - HOUSE OF CONTENT
             </span>
           </motion.div>
         </div>
-        {/* <motion.div variants={slideIn("left", "tween", 5, 1)} className="p-16">
-          <div className="mt-10">
-            {" "}
-            <div className="flex justify-center gap-5 pb-5">
-              {" "}
-              <Image
-                className=" w-[350px] h-[250px]"
-                src="/1select-dingo-2.jpg"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-              <Image
-                className=" w-[350px] h-[250px]"
-                src="/1select-dingo-2.jpg"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-            </div>
-            <div className="flex justify-center gap-5">
-              {" "}
-              <Image
-                className=" w-[350px] h-[250px]"
-                src="/1select-dingo-2.jpg"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-              <Image
-                className=" w-[350px] h-[250px]"
-                src="/1select-dingo-2.jpg"
-                width={1000}
-                height={1000}
-                alt=""
-              />
-            </div>
-          </div>
-        </motion.div> */}
       </div>
     </motion.div>
   );

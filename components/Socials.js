@@ -15,7 +15,7 @@ function Socials() {
   return (
     <div className="bg-[#ffa400]">
       <div className="wrap max-w-[1800px] mx-auto md:h-[80vh] pt-20 pb-5 lg:pt-0 h-[100%] lg:h-[50vh]">
-        <div className="wrapper font-fonttext grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        <div className="wrapper font-fonttext grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2">
           <div>
             {" "}
             <div className="icons facebook">
